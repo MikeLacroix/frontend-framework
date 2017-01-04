@@ -1,0 +1,28 @@
+
+.nav-collapse {
+  position: relative;
+
+  .hamburger {
+    display: none;
+    svg {
+      .square(25px);
+    }
+  }
+
+  &.collapsed {
+    position: absolute;
+    z-index: 500;
+    .hamburger {
+      display: block;
+    }
+    > ul {
+      display: none;
+    }
+    &.opened {
+      display: block;
+      > ul:first-of-type {
+        display: block;
+      }
+    }
+  }
+}

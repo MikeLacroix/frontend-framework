@@ -1,0 +1,31 @@
+
+.flex-container () {
+	display: ~"-webkit-flex";
+	display: ~"-ms-flexbox"; // IE10 uses -ms-flexbox
+	display: ~"-ms-flex"; // IE11
+	display: flex;
+}
+
+.flex-wrap (@wrap: nowrap) {
+  -webkit-flex-wrap: @wrap;
+      -ms-flex-wrap: @wrap;
+          flex-wrap: @wrap;
+}
+
+.align-items(@align: stretch) { // flex-start | flex-end | center | baseline | stretch
+  -webkit-align-items: @align;
+      -ms-align-items: @align;
+          align-items: @align;
+}
+
+.justify-content(@justify: flex-start) { // flex-start | flex-end | center | space-between | space-around
+  -webkit-justify-content: @justify;
+      -ms-justify-content: @justify;
+          justify-content: @justify;
+}
+
+.flex-direction(@direction: row) { // row | row-reverse | column | column-reverse
+  -webkit-flex-direction: @direction;
+      -ms-flex-direction: @direction;
+          flex-direction: @direction;
+}

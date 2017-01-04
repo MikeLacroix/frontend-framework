@@ -1,0 +1,29 @@
+
+// One-line width&height setting
+
+.size (@width, @height) {
+	width: @width;
+	height: @height;
+}
+
+.square(@size) {
+  width: @size;
+  height: @size;
+}
+
+// Vertical centering
+
+.vertical-middle {
+  .flex-container;
+  .align-items(center);
+  .flex-direction(row);
+}
+
+// Floating
+
+.pull-right {
+  text-align: right;
+}
+.pull-left {
+  text-align: left;
+}
