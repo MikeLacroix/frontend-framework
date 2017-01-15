@@ -18,6 +18,12 @@
           align-items: @align;
 }
 
+.align-self(@align: stretch) { // auto|stretch|center|flex-start|flex-end|baseline|initial|inherit
+  -webkit-align-self: @align;
+      -ms-align-self: @align;
+          align-self: @align;
+}
+
 .justify-content(@justify: flex-start) { // flex-start | flex-end | center | space-between | space-around
   -webkit-justify-content: @justify;
       -ms-justify-content: @justify;
