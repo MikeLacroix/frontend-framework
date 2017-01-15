@@ -3,3 +3,14 @@
 .font(@size, @line-height, @boldness: 400) {
 	font: @boldness @size/@line-height @fontFamily;
 }
+
+.multiline-ellipsis(@linesToShow, @lineHeight) {
+  display: block;
+  display: -webkit-box;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  -webkit-line-clamp: @linesToShow;
+  -webkit-box-orient: vertical;
+}
