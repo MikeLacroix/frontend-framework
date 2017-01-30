@@ -18,7 +18,7 @@
 }
 
 .row {
-  @include flex-container;
+  @include flex-container();
   @include flex-wrap(wrap);
   @include align-items(stretch);
   width: 100%;
