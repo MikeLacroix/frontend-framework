@@ -1,0 +1,20 @@
+
+
+/* Mixins */
+$frameworkMixinsDir: './mixins/';
+@import "{$frameworkMixinsDir}animations.scss";
+@import "{$frameworkMixinsDir}blockManipulation.scss";
+@import "{$frameworkMixinsDir}columns.scss";
+@import "{$frameworkMixinsDir}effects.scss";
+@import "{$frameworkMixinsDir}flexbox.scss";
+@import "{$frameworkMixinsDir}text.scss";
+@import "{$frameworkMixinsDir}filters.scss";
+
+/* Components */
+$frameworkComponentsDir: './components/';
+@import "{$frameworkComponentsDir}grid.scss";
+@import "{$frameworkComponentsDir}dropdown.scss";
+@import "{$frameworkComponentsDir}hamburgerMenu.scss";
+
+/* Variables */
+@import './variables.scss';

@@ -1,0 +1,24 @@
+
+// One-line width&height setting
+
+@mixin  size ($width, $height) {
+	width: $width;
+	height: $height;
+}
+
+@mixin square($size) {
+  width: $size;
+  height: $size;
+}
+
+// Vertical centering
+
+@mixin vertical-middle() {
+  @include flex-container;
+  @include align-items(center);
+  @include flex-direction(row);
+}
+
+.vertical-middle, .vm {
+  @include vertical-middle();
+}

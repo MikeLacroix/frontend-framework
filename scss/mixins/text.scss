@@ -1,0 +1,16 @@
+
+
+@mixin font($size, $line-height, $boldness: 400, $font: $mainFont) {
+	font: $boldness $size/$line-height $mainFont;
+}
+
+@mixin multiline-ellipsis($linesToShow, $lineHeight) {
+  display: block;
+  display: -webkit-box;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  -webkit-line-clamp: $linesToShow;
+  -webkit-box-orient: vertical;
+}
