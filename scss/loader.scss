@@ -1,11 +1,14 @@
 
 
+/* Variables */
+@import './variables.scss';
+
 /* Mixins */
+@import "./mixins/flexbox.scss";
 @import "./mixins/animations.scss";
 @import "./mixins/blockManipulation.scss";
 @import "./mixins/columns.scss";
 @import "./mixins/effects.scss";
-@import "./mixins/flexbox.scss";
 @import "./mixins/text.scss";
 @import "./mixins/filters.scss";
 
@@ -13,6 +16,3 @@
 @import "./components/grid.scss";
 @import "./components/dropdown.scss";
 @import "./components/hamburgerMenu.scss";
-
-/* Variables */
-@import './variables.scss';
