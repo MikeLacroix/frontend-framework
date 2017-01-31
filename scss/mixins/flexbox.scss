@@ -40,3 +40,8 @@
   -webkit-flex-grow: $value;
           flex-grow: $value;
 }
+
+@mixin align-content($value) { // stretch|center|flex-start|flex-end|space-between|space-around|initial|inherit;
+  -webkit-align-content: $value;
+          align-content: $value;
+}
