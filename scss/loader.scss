@@ -1,18 +1,19 @@
 
 
 /* Variables */
-@import './variables.scss';
+@import './variables';
+@import './colors';
 
 /* Mixins */
-@import "./mixins/flexbox.scss";
-@import "./mixins/animations.scss";
-@import "./mixins/blockManipulation.scss";
-@import "./mixins/columns.scss";
-@import "./mixins/effects.scss";
-@import "./mixins/text.scss";
-@import "./mixins/filters.scss";
+@import "./mixins/flexbox";
+@import "./mixins/animations";
+@import "./mixins/blockManipulation";
+@import "./mixins/columns";
+@import "./mixins/effects";
+@import "./mixins/text";
+@import "./mixins/filters";
 
 /* Components */
-@import "./components/grid.scss";
-@import "./components/dropdown.scss";
-@import "./components/hamburgerMenu.scss";
+@import "./components/grid";
+@import "./components/dropdown";
+@import "./components/hamburgerMenu";
