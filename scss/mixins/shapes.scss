@@ -26,13 +26,13 @@
 
   &:before {
     bottom: 100%;
-    border-bottom: $width/2 solid $background;
+    border-bottom: $height/2 solid $background;
   }
 
   &:after {
     top: 100%;
     left: 0;
     width: 0;
-    border-top: $width/2 solid $background;
+    border-top: $height/2 solid $background;
   }
 }
