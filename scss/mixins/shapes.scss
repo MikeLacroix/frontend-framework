@@ -1,0 +1,38 @@
+
+@mixin hexagon($width, $background, $contentClass: 'content') {
+  $height: $width / 1.73205; // 1.73205 ~ sqrt(3)
+
+  position: relative;
+  width: $width;
+  height: $height;
+  background-color: $background;
+  margin: $height/2;
+
+  .#{$contentClass} {
+    @include position(absolute, 0, null, null, 0);
+    width: $width;
+    height: $height;
+    overflow: hidden;
+  }
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: $width/2 solid transparent;
+    border-right: $width/2 solid transparent;
+  }
+
+  &:before {
+    bottom: 100%;
+    border-bottom: $width/2 solid $background;
+  }
+
+  &:after {
+    top: 100%;
+    left: 0;
+    width: 0;
+    border-top: $width/2 solid $background;
+  }
+}
